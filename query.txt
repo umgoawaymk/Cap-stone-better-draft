@@ -1,0 +1,47 @@
+CREATE TABLE IF NOT EXISTS Users(user_id INTEGER PRIMARY KEY AUTOINCREMENT,
+first_name TEXT,
+last_name TEXT, 
+email TEXT UNIQUE,
+phone TEXT UNIQUE,
+password TEXT VARCHAR(20),
+active INTEGER DEFAULT 1,
+manager INTEGER DEFAULT 0,
+date_created TEXT,
+hire_date TEXT);
+
+CREATE TABLE IF NOT EXISTS Competencies_Results(Competency TEXT,
+First TEXT,
+Last TEXT,
+Level INTEGER
+);
+
+CREATE TABLE IF NOT EXISTS Competencies(Competency TEXT,
+date_created TEXT
+);
+
+CREATE TABLE IF NOT EXISTS Assessments(assessment_id INTEGER PRIMARY KEY AUTOINCREMENT,
+Assessment TEXT,
+Description TEXT,
+Competency TEXT,
+average_score INTEGER,
+date_created TEXT);
+
+
+
+
+CREATE TABLE IF NOT EXISTS Competency_Assessment_Results(
+assessment_id INTEGER,
+user_id INTEGER,
+first_name TEXT,
+last_name TEXT, 
+score INTEGER,
+date_taken TEXT,
+administrator INTEGER,
+FOREIGN KEY (user_id)
+    REFERENCES Users(user_id),
+FOREIGN KEY (administrator)
+    REFERENCES Users(user_id)
+    );
+
+UPDATE Competency_Assessment_Results SET Assessment = 'Functions Competency Measure' WHERE Assessment = 'Functions Compentency Measure';
+

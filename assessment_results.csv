@@ -1,0 +1,11 @@
+User_ID,First,Last,Assessment_id,Assessment,Description,Score,Competency,date_taken
+1,Madelyn,Huntley,1,Data Types Interview,Face to face interview on Data Types,3,Data Types,08/22/2022
+2,Aaron,Norris,1,Data Types Interview,Face to face interview on Data Types,3,Data Types,08/22/2022
+3,Hank,Frankcom,1,Data Types Interview,Face to face interview on Data Types,2,Data Types,08/22/2022
+4,Haddie,Howard,1,Data Types Interview,Face to face interview on Data Types,3,Data Types,08/22/2022
+5,Fred,Davis,1,Data Types Interview,Face to face interview on Data Types,4,Data Types,08/22/2022
+1,Madelyn,Huntley,2,Variables quiz,An online quiz testing knowlege on Variables,2,Variables,08/22/2022
+2,Aaron,Norris,2,Variables quiz,An online quiz testing knowlege on Variables,2,Variables,08/22/2022
+3,Hank,Frankcom,2,Variables quiz,An online quiz testing knowlege on Variables,1,Variables,08/22/2022
+4,Haddie,Howard,2,Variables quiz,An online quiz testing knowlege on Variables,2,Variables,08/22/2022
+5,Fred,Davis,2,Variables quiz,An online quiz testing knowlege on Variables,4,Variables,08/22/2022
